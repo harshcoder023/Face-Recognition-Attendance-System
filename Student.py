@@ -368,7 +368,7 @@ class student:
                     messagebox.showerror("Error", f"Due To:{str(es)}", parent=self.root)
 
     def fetch_data(self,event=""):
-        conn=mysql.connector.connect(host="localhost", username="root", password="workbench@1234", database="face_recog_system")
+        conn=mysql.connector.connect(host="localhost", username="root", password="workbench@001", database="face_recog_system")
         my_cursor=conn.cursor()
         my_cursor.execute("select * from student")
         data=my_cursor.fetchall()
@@ -495,7 +495,7 @@ class student:
             conn = mysql.connector.connect(
                 host="localhost",
                 username="root",
-                password="workbench@1234",
+                password="workbench@001",
                 database="face_recog_system"
             )
             my_cursor = conn.cursor()
@@ -652,7 +652,7 @@ class student:
         conn = mysql.connector.connect(
         host="localhost",
         username="root",
-        password="workbench@1234",
+        password="workbench@001",
         database="face_recog_system"
         )
         my_cursor = conn.cursor()
@@ -744,3 +744,4 @@ if __name__ == "__main__":
     obj = student(root)
     root.mainloop()
     
+
